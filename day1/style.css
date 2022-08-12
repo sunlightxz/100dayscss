@@ -1,0 +1,83 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right top, #433b9f, #0065be, #0089cb, #00a8cc, #4ec5ca);
+}
+.number{
+    position : relative ;
+    height : 100px ;
+    width : 200px ;
+    display : flex ;
+}
+.nbr-one{
+    position: absolute;
+    z-index: 10;
+    content:"";
+    width:26px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow : 0 0 13px 0 rgb(0 0 0 / 20%) ;
+    
+}
+
+
+.nbr-one::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 22px;
+    transform: rotate(50deg);
+    background-color: #fff;
+    border-radius: 3px;
+    left: -21px;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+
+.nbr-zero , .nbr-zero2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: solid 25px #fff;
+    border-radius: 50%;
+    Left : 15px ;
+    box-shadow : 0 0 13px rgba(0,0,0,0.2) ;
+    z-index : 3 ;
+}
+.nbr-zero2{
+    Left : 110px ;  
+    box-shadow : 0 0 13px rgba(0,0,0,0.2) ;
+    z-index: 1;
+}
+
+h2{
+    font-size : 82px ;
+    font-weight : 988 ;
+    Line-height : 60px ;
+    margin-top : 20px ;
+    margin-bottom : 0 ;
+    text-transform : uppercase ;
+}
+h4{
+    font-size: 30px;
+    font-weight: 700 ;
+    line-height: 60px;
+    margin-top : -8px ;
+    margin-bottom : 0 ;
+    text-transform : uppercase ;
+}
